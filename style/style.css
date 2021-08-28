@@ -62,6 +62,10 @@ body {
     margin: auto 0;
 }
 
+.title h1 {
+    color: var(--white);
+}
+
 .title > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,10 +73,53 @@ body {
     align-items: center;
 }
 
+.title > div h4 {
+    color: var(--white);
+}
+
 /* ======= Toggle Section Start ======= */
 
 .container .title > div .toggle input{
     display: none;
+}
+
+.container .title > div .toggle {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+.container .title > div .toggle .theme_number{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.slider {
+    position: absolute;
+    top: 16px; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    cursor: pointer;
+    background-color: var(--very-dark-desaturated-blue-2);
+    border-radius: 30px;
+}
+
+.slider::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: var(--red);
+}
+
+.container .title > div .toggle input:checked + .slider::before {
+    left: 31px;
 }
 
 /* ======= Toggle Section End ======= */
