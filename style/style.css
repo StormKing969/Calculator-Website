@@ -3,25 +3,19 @@
 :root {
     /* Theme 1 Background */
 
-    --very-dark-desaturated-blue-1: hsl(222, 26%, 31%); /* Main Background */
-    --very-dark-desaturated-blue-2: hsl(223, 31%, 20%); /* Toggle & Keypad Background */
-    --very-dark-desaturated-blue-3: hsl(224, 36%, 15%); /* Screen Background */
+    --very-dark-desaturated-blue-1: hsl(222, 26%, 31%); 
+    --very-dark-desaturated-blue-2: hsl(223, 31%, 20%); 
+    --very-dark-desaturated-blue-3: hsl(224, 36%, 15%); 
 
-    /* Theme 1 Keys */
+    --desaturated-dark-blue-1: hsl(225, 21%, 49%); 
+    --desaturated-dark-blue-2: hsl(224, 28%, 35%);
 
-    --desaturated-dark-blue-1: hsl(225, 21%, 49%); /* Key background */
-    --desaturated-dark-blue-2: hsl(224, 28%, 35%); /* Key shadow */
-
-    --red: hsl(6, 63%, 50%); /* Key background & Toggle */
-    --dark-red: hsl(6, 70%, 34%); /* Key shadow */
-
-    --light-grayish-orange: hsl(30, 25%, 89%); /* Key background */
-    --grayish-orange: hsl(28, 16%, 65%); /* Key shadow */
-
-    /* Theme 1 Text */
+    --red: hsl(6, 63%, 50%);
+    --dark-red: hsl(6, 70%, 34%);
+    --light-grayish-orange: hsl(30, 25%, 89%); 
+    --grayish-orange: hsl(28, 16%, 65%); 
 
     --very-dark-grayish-blue: hsl(221, 14%, 31%);
-    --white: hsl(0, 0, 100%);
 }
 
 * {
@@ -37,6 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    letter-spacing: 1.6px;
 }
 
 /* =============== Global Section End =============== */
@@ -63,18 +58,40 @@ body {
 }
 
 .title h1 {
-    color: var(--white);
+    color: white;
 }
 
 .title > div {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto 0;
-    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "empty_class toggle_class"
+        "theme_class toggle_class";
 }
 
 .title > div h4 {
-    color: var(--white);
+    color: white;
+    grid-area: theme_class;
+    margin-top: 5px;
+}
+
+.title > div span {
+    content: "";
+    grid-area: empty_class;
+}
+
+.title > div .span_1 {
+    float: left;
+    margin-left: 7px;
+}
+.title > div .span_2 {
+    margin-left: 23%;
+}
+
+.title > div .span_3 {
+    float: right;
+    margin-right: 7px;
 }
 
 /* ======= Toggle Section Start ======= */
@@ -84,42 +101,43 @@ body {
 }
 
 .container .title > div .toggle {
+    grid-area: toggle_class;
     position: relative;
     display: inline-block;
     width: 80px;
-    height: 40px;
+    height: 50px;
 }
 
 .container .title > div .toggle .theme_number{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+    color: white;
 }
 
 .slider {
     position: absolute;
-    top: 16px; 
+    top: 22px; 
     bottom: 0;
     left: 0; 
     right: 0;
     cursor: pointer;
     background-color: var(--very-dark-desaturated-blue-2);
     border-radius: 30px;
+    transition: .4s;
 }
 
 .slider::before {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 4px;
     background-color: var(--red);
+    transition: .4s;
 }
 
 .container .title > div .toggle input:checked + .slider::before {
-    left: 31px;
+    transform: translateX(26px);
 }
 
 /* ======= Toggle Section End ======= */
