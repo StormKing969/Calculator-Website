@@ -73,12 +73,9 @@
 
 body {
     font-family: 'Spartan', sans-serif;
-    width: 375px;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    letter-spacing: 1.6px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* =============== Global Section End =============== */
@@ -87,19 +84,10 @@ body {
 
 .container {
     background-color: var(--very-dark-desaturated-blue-1);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 2fr;
-    padding: 20px;
+    width: 100%;
+    height: calc(100% - 20px);
     border-radius: 5px;
-}
-
-.container_theme_2 {
-    background-color: var(--light-gray);
-}
-
-.container_theme_3 {
-    background-color: var(--very-dark-desaturated-blue-1);
+    padding: 20px;
 }
 
 /* =============== Container Section End =============== */
@@ -109,7 +97,6 @@ body {
 .title {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto 0;
 }
 
 .title h1 {
@@ -117,7 +104,7 @@ body {
 }
 
 .title > div {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -205,14 +192,138 @@ body {
 
 /* =============== Result Section Start =============== */
 
+.container .result {
+    margin-top: 30px;
+}
 
-
+.container .result .app_output {
+    font-size: 32px;
+    color: white;
+    background-color: var(--very-dark-desaturated-blue-2);
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 34px 20px 34px 1px;
+    text-align: right;
+}
 
 /* =============== Result Section End =============== */
 
 /* =============== Key Section Start =============== */
 
+.container .keys {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--very-dark-desaturated-blue-2);
+    border-radius: 10px;
+    grid-template-areas: 
+        "seven eight nine del"
+        "four five six plus"
+        "one two three minus"
+        "dot zero divide multiply"
+        "reset reset equal equal";
+}
 
+.container .keys span {
+    height: 58px;
+    font-size: 24px;
+    background-color: var(--light-grayish-orange);
+    border-radius: 10px;
+    text-align: center;
+    margin: 8px;
+    padding: 17px;
+    color: var(--desaturated-dark-blue-1);
+    text-shadow: var(--desaturated-dark-blue-2);
+}
 
+/* ======= Key Positioning Start ======= */
+
+/* ==== First Row ==== */
+
+.container .keys .seven {
+    grid-area: seven;
+}
+
+.container .keys .eight {
+    grid-area: eight;
+}
+
+.container .keys .nine {
+    grid-area: nine;
+}
+
+.container .keys .del {
+    grid-area: del;
+    letter-spacing: 0;
+}
+
+/* ==== Second Row ==== */
+
+.container .keys .four {
+    grid-area: four;
+}
+
+.container .keys .five {
+    grid-area: five;
+}
+
+.container .keys .six {
+    grid-area: six;
+}
+
+.container .keys .plus {
+    grid-area: plus;
+}
+
+/* ==== Third Row ==== */
+
+.container .keys .one {
+    grid-area: one;
+}
+
+.container .keys .two {
+    grid-area: two;
+}
+
+.container .keys .three {
+    grid-area: three;
+}
+
+.container .keys .minus {
+    grid-area: minus;
+}
+
+/* ==== Fourth Row ==== */
+
+.container .keys .dot {
+    grid-area: dot;
+}
+
+.container .keys .zero {
+    grid-area: zero;
+}
+
+.container .keys .divide {
+    grid-area: divide;
+}
+
+.container .keys .multiply {
+    grid-area: multiply;
+}
+
+/* ==== Last Row ==== */
+
+.container .keys .reset {
+    grid-area: reset;
+}
+
+.container .keys .equal {
+    grid-area: equal;
+}
+
+/* ======= Key Positioning End ======= */
 
 /* =============== Key Section End =============== */
