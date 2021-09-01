@@ -217,6 +217,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 30px;
     padding: 15px;
+    height: auto;
     background-color: var(--very-dark-desaturated-blue-2);
     border-radius: 10px;
     grid-template-areas: 
@@ -228,13 +229,14 @@ body {
 }
 
 .container .keys span {
-    height: 58px;
-    font-size: 24px;
+    height: 85px;
+    width: 85px;
+    font-size: 32px;
     background-color: var(--light-grayish-orange);
     border-radius: 10px;
     text-align: center;
     margin: 8px;
-    padding: 17px;
+    padding: 26.5px;
     color: var(--desaturated-dark-blue-1);
     text-shadow: var(--desaturated-dark-blue-2);
 }
@@ -258,6 +260,7 @@ body {
 .container .keys .del {
     grid-area: del;
     letter-spacing: 0;
+    padding: 25% 0;
 }
 
 /* ==== Second Row ==== */
@@ -318,10 +321,12 @@ body {
 
 .container .keys .reset {
     grid-area: reset;
+    width: auto;
 }
 
 .container .keys .equal {
     grid-area: equal;
+    width: auto;
 }
 
 /* ======= Key Positioning End ======= */
