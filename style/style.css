@@ -233,7 +233,7 @@ body {
     margin: 5px;
     border-radius: 15px;
     font-size: 32px;
-
+}
 
 .container .keys .reset {
     grid-area: reset;
