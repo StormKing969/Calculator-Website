@@ -183,7 +183,7 @@ body {
 }
 
 .move_2::before {
-    transform: translateX(52px);
+    transform: translateX(53px);
 }
 
 /* ======= Toggle Section End ======= */
@@ -228,96 +228,12 @@ body {
         "reset reset equal equal";
 }
 
-.container .keys span {
-    height: 85px;
-    width: 85px;
+.container .keys button {
+    height: 80px;
+    margin: 5px;
+    border-radius: 15px;
     font-size: 32px;
-    background-color: var(--light-grayish-orange);
-    border-radius: 10px;
-    text-align: center;
-    margin: 8px;
-    padding: 26.5px;
-    color: var(--desaturated-dark-blue-1);
-    text-shadow: var(--desaturated-dark-blue-2);
 }
-
-/* ======= Key Positioning Start ======= */
-
-/* ==== First Row ==== */
-
-.container .keys .seven {
-    grid-area: seven;
-}
-
-.container .keys .eight {
-    grid-area: eight;
-}
-
-.container .keys .nine {
-    grid-area: nine;
-}
-
-.container .keys .del {
-    grid-area: del;
-    letter-spacing: 0;
-    padding: 25% 0;
-}
-
-/* ==== Second Row ==== */
-
-.container .keys .four {
-    grid-area: four;
-}
-
-.container .keys .five {
-    grid-area: five;
-}
-
-.container .keys .six {
-    grid-area: six;
-}
-
-.container .keys .plus {
-    grid-area: plus;
-}
-
-/* ==== Third Row ==== */
-
-.container .keys .one {
-    grid-area: one;
-}
-
-.container .keys .two {
-    grid-area: two;
-}
-
-.container .keys .three {
-    grid-area: three;
-}
-
-.container .keys .minus {
-    grid-area: minus;
-}
-
-/* ==== Fourth Row ==== */
-
-.container .keys .dot {
-    grid-area: dot;
-}
-
-.container .keys .zero {
-    grid-area: zero;
-}
-
-.container .keys .divide {
-    grid-area: divide;
-}
-
-.container .keys .multiply {
-    grid-area: multiply;
-}
-
-/* ==== Last Row ==== */
 
 .container .keys .reset {
     grid-area: reset;
@@ -328,7 +244,5 @@ body {
     grid-area: equal;
     width: auto;
 }
-
-/* ======= Key Positioning End ======= */
 
 /* =============== Key Section End =============== */
