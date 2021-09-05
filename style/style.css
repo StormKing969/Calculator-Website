@@ -183,7 +183,7 @@ body {
 }
 
 .move_2::before {
-    transform: translateX(52px);
+    transform: translateX(55px);
 }
 
 /* ======= Toggle Section End ======= */
@@ -228,7 +228,7 @@ body {
         "reset reset equal equal";
 }
 
-.container .keys span {
+.container .keys button {
     height: 85px;
     width: 85px;
     font-size: 32px;
@@ -236,7 +236,6 @@ body {
     border-radius: 10px;
     text-align: center;
     margin: 8px;
-    padding: 26.5px;
     color: var(--desaturated-dark-blue-1);
     text-shadow: var(--desaturated-dark-blue-2);
 }
@@ -259,8 +258,6 @@ body {
 
 .container .keys .del {
     grid-area: del;
-    letter-spacing: 0;
-    padding: 25% 0;
 }
 
 /* ==== Second Row ==== */
