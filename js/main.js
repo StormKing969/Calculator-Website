@@ -43,3 +43,4 @@ function Calculation(number1, operator, number2) {
     }
 }
 
+document.querySelectorAll()
