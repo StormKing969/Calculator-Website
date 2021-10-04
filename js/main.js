@@ -1,4 +1,7 @@
-var clickCounter = 0
+var clickCounter = 0;
+var display = [];
+var memory = [];
+
 
 document.querySelector(".background_changer").addEventListener("change", function() {
     clickCounter += 1;
@@ -19,28 +22,17 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("slider").classList.remove("move_1");
         clickCounter = 0;
     }  
-})
+});
 
-function Calculation(number1, operator, number2) {
-    num1 = parseFloat(number1);
-    num2 = parseFloat(number2);
-
-    if (operator == "x") {
-        var result = num1 * num2;
-        return result;
-    }
-    if (operator == "/") {
-        var result = num1 / num2;
-        return result;
-    }
-    if (operator == "+") {
-        var result = num1 + num2;
-        return result;
-    }
-    if (operator == "-") {
-        var result = num1 - num2;
-        return result;
-    }
+function updateScreen(screenInput) {
+    document.querySelector("#app-output").innerHTML = screenInput;
 }
 
-document.querySelectorAll()
+function Calculator(userInput) {
+    console.log(userInput);
+
+    if (userInput == "+" || userInput == "-" || userInput == "x" || userInput == "/") {
+        display = [0];
+        updateScreen(display);
+    }
+}

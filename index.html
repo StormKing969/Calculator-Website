@@ -39,33 +39,32 @@
 
     <div class="result">
       <p id="app-output" class="app_output">
-        0
       </p>
     </div>
 
     <div class="keys">
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>DEL</button>
+      <button id="btn" onclick="Calculator('7')">7</button>
+      <button id="btn" onclick="Calculator('8')">8</button>
+      <button id="btn" onclick="Calculator('9')">9</button>
+      <button id="btn" onclick="Calculator('DEL')">DEL</button>
 
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>+</button>
+      <button id="btn" onclick="Calculator('4')">4</button>
+      <button id="btn" onclick="Calculator('5')">5</button>
+      <button id="btn" onclick="Calculator('6')">6</button>
+      <button id="btn" onclick="Calculator('+')">+</button>
 
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>-</button>
+      <button id="btn" onclick="Calculator('1')">1</button>
+      <button id="btn" onclick="Calculator('2')">2</button>
+      <button id="btn" onclick="Calculator('3')">3</button>
+      <button id="btn" onclick="Calculator('-')">-</button>
 
-      <button>.</button>
-      <button>0</button>
-      <button>/</button>
-      <button>x</button>
+      <button id="btn" onclick="Calculator('.')">.</button>
+      <button id="btn" onclick="Calculator('0')">0</button>
+      <button id="btn" onclick="Calculator('/')">/</button>
+      <button id="btn" onclick="Calculator('x')">x</button>
 
-      <button class="reset">RESET</button>
-      <button class="equal">=</button>
+      <button id="btn" class="reset" onclick="Calculator('RESET')">RESET</button>
+      <button id="btn" class="equal" onclick="Calculator('=')">=</button>
     </div>
   </main>
 
