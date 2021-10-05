@@ -102,8 +102,6 @@ function Calculator(userInput) {
 
         case "+":
             if (memory.length != 0) {
-                console.log(operator);
-                console.log("");
                 var temp = display.slice(0, display.length - 0);
                 var operationOutput = Operation(memory, operator, temp);
                 updateScreen(operationOutput); 
@@ -122,8 +120,6 @@ function Calculator(userInput) {
         
         case "-":
             if (memory.length != 0) {
-                console.log(operator);
-                console.log("");
                 var temp = display.slice(0, display.length - 0);
                 var operationOutput = Operation(memory, operator, temp);
                 updateScreen(operationOutput); 
@@ -141,8 +137,6 @@ function Calculator(userInput) {
 
         case "x":
             if (memory.length != 0) {
-                console.log(operator);
-                console.log("");
                 var temp = display.slice(0, display.length - 0);
                 var operationOutput = Operation(memory, operator, temp);
                 updateScreen(operationOutput); 
@@ -160,8 +154,6 @@ function Calculator(userInput) {
 
         case "/":
             if (memory.length != 0) {
-                console.log(operator);
-                console.log("");
                 var temp = display.slice(0, display.length - 0);
                 var operationOutput = Operation(memory, operator, temp);
                 updateScreen(operationOutput); 
@@ -179,11 +171,11 @@ function Calculator(userInput) {
 
         case "=":
             var temp = display.slice(0, display.length - 1);
-            display = [];
             var operationOutput = Operation(memory, operator, temp);
-            updateScreen(operationOutput); 
             display = [operationOutput];
             operator = [];
+            memory = [];
+            updateScreen(display); 
     }
 }
 
