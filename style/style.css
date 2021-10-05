@@ -111,6 +111,14 @@ body {
     color: white;
 }
 
+.title .h1_v2{
+    color: var(--very-dark-grayish-yellow);
+}
+
+.title .h1_v3{
+    color: var(--light-yellow);
+}
+
 .title > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,6 +132,14 @@ body {
     color: white;
     grid-area: theme_class;
     margin-top: 5px;
+}
+
+.title > div .h4_v2 {
+    color: var(--very-dark-grayish-yellow);
+}
+
+.title > div .h4_v3 {
+    color: var(--light-yellow);
 }
 
 .title > div span {
@@ -258,6 +274,14 @@ body {
         "one two three minus"
         "dot zero divide multiply"
         "reset reset equal equal";
+}
+
+.container .keys_v2 {
+    background-color: var(--grayish-red);
+}
+
+.container .keys_v3 {
+    background-color: var(--very-dark-violet-2);
 }
 
 .container .keys button {

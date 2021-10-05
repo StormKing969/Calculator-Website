@@ -14,9 +14,13 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("slider").classList.toggle("move_1");
 
         document.getElementById("container").classList.add("container_v2");
+        document.getElementById("h1_v1").classList.add("h1_v2");
+        document.getElementById("h4_v1").classList.add("h4_v2");
+        document.getElementById("theme-number").classList.add("theme_number_v2");
         document.getElementById("slider").classList.add("slider_v2");
         document.getElementById("app-output").classList.add("app_output_v2");
-        document.getElementById("theme-number").classList.add("theme_number_v2");
+        document.getElementById("keys_v1").classList.add("keys_v2");
+        
     }
 
     // Theme 2
@@ -24,9 +28,13 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("slider").classList.toggle("move_2");
 
         document.getElementById("container").classList.add("container_v3");
+        document.getElementById("h1_v1").classList.add("h1_v3");
+        document.getElementById("h4_v1").classList.add("h4_v3");
+        document.getElementById("theme-number").classList.add("theme_number_v3");
         document.getElementById("slider").classList.add("slider_v3");
         document.getElementById("app-output").classList.add("app_output_v3");
-        document.getElementById("theme-number").classList.add("theme_number_v3");
+        document.getElementById("keys_v1").classList.add("keys_v3");
+        
     }
     
     // Theme 3
@@ -38,14 +46,25 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("container").classList.remove("container_v2");
         document.getElementById("container").classList.remove("container_v3");
 
+        document.getElementById("h1_v1").classList.remove("h1_v2");
+        document.getElementById("h1_v1").classList.remove("h1_v3");
+
+        document.getElementById("h4_v1").classList.remove("h4_v2");
+        document.getElementById("h4_v1").classList.remove("h4_v3");
+
+        document.getElementById("theme-number").classList.remove("theme_number_v2");
+        document.getElementById("theme-number").classList.remove("theme_number_v3");
+
         document.getElementById("slider").classList.remove("slider_v2");
         document.getElementById("slider").classList.remove("slider_v3");
 
         document.getElementById("app-output").classList.remove("app_output_v2");
         document.getElementById("app-output").classList.remove("app_output_v3");
 
-        document.getElementById("theme-number").classList.remove("theme_number_v2");
-        document.getElementById("theme-number").classList.remove("theme_number_v3");
+        document.getElementById("keys_v1").classList.remove("keys_v2");
+        document.getElementById("keys_v1").classList.remove("keys_v3");
+
+        
     }  
 });
 
