@@ -1,3 +1,5 @@
+// import { theme1 } from "./theme1";
+
 var clickCounter = 0;
 var display = [];
 var memory = [];
@@ -12,6 +14,8 @@ document.querySelector(".background_changer").addEventListener("change", functio
     // Theme 1
     if (clickCounter == 1) {
         document.getElementById("slider").classList.toggle("move_1");
+
+        // theme1();
 
         document.getElementById("container").classList.add("container_v2");
         document.getElementById("h1_v1").classList.add("h1_v2");
