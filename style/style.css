@@ -76,6 +76,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    padding: 5px 5px 10px;
 }
 
 /* =============== Global Section End =============== */
@@ -86,16 +87,8 @@ body {
     background-color: var(--very-dark-desaturated-blue-1);
     width: 100%;
     height: calc(100% - 20px);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
-}
-
-.container_v2 {
-    background-color: var(--light-gray);
-}
-
-.container_v3 {
-    background-color: var(--very-dark-violet-1);
 }
 
 /* =============== Container Section End =============== */
@@ -111,14 +104,6 @@ body {
     color: white;
 }
 
-.title .h1_v2{
-    color: var(--very-dark-grayish-yellow);
-}
-
-.title .h1_v3{
-    color: var(--light-yellow);
-}
-
 .title > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -132,14 +117,6 @@ body {
     color: white;
     grid-area: theme_class;
     margin-top: 5px;
-}
-
-.title > div .h4_v2 {
-    color: var(--very-dark-grayish-yellow);
-}
-
-.title > div .h4_v3 {
-    color: var(--light-yellow);
 }
 
 .title > div span {
@@ -178,14 +155,6 @@ body {
     color: white;
 }
 
-.container .title > div .toggle .theme_number_v2{
-    color: var(--very-dark-grayish-yellow);
-}
-
-.container .title > div .toggle .theme_number_v3{
-    color: var(--light-yellow);
-}
-
 .slider {
     position: absolute;
     top: 22px; 
@@ -196,14 +165,6 @@ body {
     background-color: var(--very-dark-desaturated-blue-2);
     border-radius: 30px;
     transition: .4s;
-}
-
-.slider_v2 {
-    background-color: var(--grayish-red);
-}
-
-.slider_v3 {
-    background-color: var(--very-dark-violet-2);
 }
 
 .slider::before {
@@ -247,14 +208,6 @@ body {
     text-align: right;
 }
 
-.container .result .app_output_v2 {
-    background-color: var(--very-light-gray);
-}
-
-.container .result .app_output_v3 {
-    background-color: var(--very-dark-violet-2);
-}
-
 /* =============== Result Section End =============== */
 
 /* =============== Key Section Start =============== */
@@ -267,6 +220,7 @@ body {
     padding: 15px;
     height: auto;
     background-color: var(--very-dark-desaturated-blue-2);
+    border: none;
     border-radius: 10px;
     grid-template-areas: 
         "seven eight nine del"
@@ -276,29 +230,152 @@ body {
         "reset reset equal equal";
 }
 
+.container .keys button {
+    display: inline-block;
+    height: 70px;
+    margin: 9px 5px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--very-dark-grayish-blue);
+    cursor: pointer;
+    font-size: 32px;
+    background-color: var(--light-grayish-orange);
+    box-shadow: 0px 4px 0px var(--grayish-orange);
+}
+
+.container .keys .delete {
+    color: white;
+    font-size: 24px;
+    background-color: var(--desaturated-dark-blue-1);
+    box-shadow: 0px 4px 0px var(--desaturated-dark-blue-2);
+}
+
+.container .keys .reset {
+    grid-area: reset;
+    width: auto;
+    color: white;
+    font-size: 24px;
+    background-color: var(--desaturated-dark-blue-1);
+    box-shadow: 0px 4px 0px var(--desaturated-dark-blue-2);
+}
+
+.container .keys .equal {
+    grid-area: equal;
+    width: auto;
+    color: white;
+    font-size: 24px;
+    background-color: var(--red);
+    box-shadow: 0px 4px 0px var(--dark-red);
+}
+
+/* =============== Key Section End =============== */
+
+/* =============== Theme 2 Color Change Start =============== */
+
+.container_v2 {
+    background-color: var(--light-gray);
+}
+
+.title .h1_v2{
+    color: var(--very-dark-grayish-yellow);
+}
+
+.title > div .h4_v2 {
+    color: var(--very-dark-grayish-yellow);
+}
+
+.container .title > div .toggle .theme_number_v2{
+    color: var(--very-dark-grayish-yellow);
+}
+
+.slider_v2 {
+    background-color: var(--grayish-red);
+}
+
+.container .result .app_output_v2 {
+    color: var(--very-dark-grayish-yellow);
+    background-color: var(--very-light-gray);
+}
+
 .container .keys_v2 {
     background-color: var(--grayish-red);
+}
+
+.container .keys .button_color_v2 {
+    color: var(--very-dark-grayish-yellow);
+    background-color: var(--light-grayish-yellow);
+    box-shadow: 0px 4px 0px var(--dark-grayish-orange);
+}
+
+.container .keys .delete_color_v2 {
+    background-color: var(--dark-moderate-cyan);
+    box-shadow: 0px 4px 0px var(--very-dark-cyan);
+}
+
+ .reset_color_v2 {
+    background-color: var(--dark-moderate-cyan);
+    box-shadow: 0px 4px 0px var(--very-dark-cyan);
+}
+
+.container .keys .equal_color_v2 {
+    background-color: var(--orange);
+    box-shadow: 0px 4px 0px var(--dark-orange);
+}
+
+/* =============== Theme 2 Color Change End =============== */
+
+/* =============== Theme 3 Color Change Start =============== */
+
+.container_v3 {
+    background-color: var(--very-dark-violet-1);
+}
+
+.title .h1_v3{
+    color: var(--light-yellow);
+}
+
+.title > div .h4_v3 {
+    color: var(--light-yellow);
+}
+
+.container .title > div .toggle .theme_number_v3{
+    color: var(--light-yellow);
+}
+
+.slider_v3 {
+    background-color: var(--very-dark-violet-2);
+}
+
+.container .result .app_output_v3 {
+    background-color: var(--very-dark-violet-2);
 }
 
 .container .keys_v3 {
     background-color: var(--very-dark-violet-2);
 }
 
-.container .keys button {
-    height: 80px;
-    margin: 5px;
-    border-radius: 15px;
-    font-size: 32px;
+.container .keys button .button_color_v2 {
+    color: var(--very-dark-grayish-yellow);
+    background-color: var(--dark-moderate-cyan);
+    box-shadow: 0px 4px 0px var(--very-dark-cyan);
 }
 
-.container .keys .reset {
-    grid-area: reset;
-    width: auto;
+.container .keys .delete_color_v2 {
+    background-color: var(--light-grayish-yellow);
+    box-shadow: 0px 4px 0px var(--light-grayish-orange);
 }
 
-.container .keys .equal {
-    grid-area: equal;
-    width: auto;
+.container .keys .reset_color_v2 {
+    background-color: var(--light-grayish-yellow);
+    box-shadow: 0px 4px 0px var(--light-grayish-orange);
 }
 
-/* =============== Key Section End =============== */
+.container .keys .equal_color_v2 {
+    background-color: var(--orange);
+    box-shadow: 0px 4px 0px var(--dark-orange);
+}
+
+/* =============== Theme 3 Color Change End =============== */

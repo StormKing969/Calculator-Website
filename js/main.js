@@ -11,11 +11,9 @@ document.querySelector(".background_changer").addEventListener("change", functio
     clickCounter += 1;
     // console.log(clickCounter);
 
-    // Theme 1
+    // Theme 2
     if (clickCounter == 1) {
         document.getElementById("slider").classList.toggle("move_1");
-
-        // theme1();
 
         document.getElementById("container").classList.add("container_v2");
         document.getElementById("h1_v1").classList.add("h1_v2");
@@ -25,9 +23,16 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("app-output").classList.add("app_output_v2");
         document.getElementById("keys_v1").classList.add("keys_v2");
         
+        // Array.from(document.querySelectorAll('button')).map(function(button) {
+        //     button.classList.add("button_color_v2");
+        // });
+
+        // document.getElementsByClassName("reset").classList.add("reset_color_v2");
+        document.getElementsByClassName("reset").add("reset_color_v2")
+        
     }
 
-    // Theme 2
+    // Theme 3
     if (clickCounter == 2) {
         document.getElementById("slider").classList.toggle("move_2");
 
@@ -41,7 +46,7 @@ document.querySelector(".background_changer").addEventListener("change", functio
         
     }
     
-    // Theme 3
+    // Theme 1
     if (clickCounter == 3) {
         document.getElementById("slider").classList.remove("move_2");
         document.getElementById("slider").classList.remove("move_1");
