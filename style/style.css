@@ -295,6 +295,10 @@ body {
     background-color: var(--grayish-red);
 }
 
+.slider_v2::before {
+    background-color: var(--orange);
+}
+
 .container .result .app_output_v2 {
     color: var(--very-dark-grayish-yellow);
     background-color: var(--very-light-gray);
@@ -315,7 +319,7 @@ body {
     box-shadow: 0px 4px 0px var(--very-dark-cyan);
 }
 
- .reset_color_v2 {
+.container .keys .reset_color_v2 {
     background-color: var(--dark-moderate-cyan);
     box-shadow: 0px 4px 0px var(--very-dark-cyan);
 }
@@ -349,7 +353,12 @@ body {
     background-color: var(--very-dark-violet-2);
 }
 
+.slider_v3::before {
+    background-color: var(--pure-cyan);
+}
+
 .container .result .app_output_v3 {
+    color: var(--light-yellow);
     background-color: var(--very-dark-violet-2);
 }
 
@@ -357,25 +366,33 @@ body {
     background-color: var(--very-dark-violet-2);
 }
 
-.container .keys button .button_color_v2 {
-    color: var(--very-dark-grayish-yellow);
-    background-color: var(--dark-moderate-cyan);
-    box-shadow: 0px 4px 0px var(--very-dark-cyan);
+.container .keys .button_color_v3 {
+    color: var(--light-yellow);
+    background-color: var(--very-dark-violet-3);
+    box-shadow: 0px 4px 0px var(--dark-magenta);
 }
 
-.container .keys .delete_color_v2 {
-    background-color: var(--light-grayish-yellow);
-    box-shadow: 0px 4px 0px var(--light-grayish-orange);
+.container .keys .delete_color_v3 {
+    background-color: var(--dark-violet);
+    box-shadow: 0px 4px 0px var(--vivid-magenta);
 }
 
-.container .keys .reset_color_v2 {
-    background-color: var(--light-grayish-yellow);
-    box-shadow: 0px 4px 0px var(--light-grayish-orange);
+.container .keys .reset_color_v3 {
+    background-color: var(--dark-violet);
+    box-shadow: 0px 4px 0px var(--vivid-magenta);
 }
 
-.container .keys .equal_color_v2 {
-    background-color: var(--orange);
-    box-shadow: 0px 4px 0px var(--dark-orange);
+.container .keys .equal_color_v3 {
+    color: var(--very-dark-blue-4);
+    background-color: var(--pure-cyan);
+    box-shadow: 0px 4px 0px var(--soft-cyan);
 }
 
 /* =============== Theme 3 Color Change End =============== */
+
+/* =============== Desktop Mode Start =============== */
+@media (min-width:772px) {
+    .container {
+        padding: 7% 30%;
+    }
+}

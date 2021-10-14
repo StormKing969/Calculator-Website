@@ -23,26 +23,53 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("app-output").classList.add("app_output_v2");
         document.getElementById("keys_v1").classList.add("keys_v2");
         
-        // Array.from(document.querySelectorAll('button')).map(function(button) {
-        //     button.classList.add("button_color_v2");
-        // });
+        Array.from(document.querySelectorAll('.btn')).map(function(button) {
+            button.classList.add("button_color_v2");
+        });
 
-        // document.getElementsByClassName("reset").classList.add("reset_color_v2");
-        document.getElementsByClassName("reset").add("reset_color_v2")
-        
+        document.getElementById("delete").classList.add("delete_color_v2");
+        document.getElementById("reset").classList.add("reset_color_v2");
+        document.getElementById("equal").classList.add("equal_color_v2");
     }
 
     // Theme 3
     if (clickCounter == 2) {
         document.getElementById("slider").classList.toggle("move_2");
 
+        document.getElementById("container").classList.remove("container_v2");
         document.getElementById("container").classList.add("container_v3");
+
+        document.getElementById("h1_v1").classList.remove("h1_v2");
         document.getElementById("h1_v1").classList.add("h1_v3");
+
+        document.getElementById("h4_v1").classList.remove("h4_v2");
         document.getElementById("h4_v1").classList.add("h4_v3");
+
+        document.getElementById("theme-number").classList.remove("theme_number_v2");
         document.getElementById("theme-number").classList.add("theme_number_v3");
+
+        document.getElementById("slider").classList.remove("slider_v2");
         document.getElementById("slider").classList.add("slider_v3");
+        
+        document.getElementById("app-output").classList.remove("app_output_v2");
         document.getElementById("app-output").classList.add("app_output_v3");
+
+        document.getElementById("keys_v1").classList.remove("keys_v2");
         document.getElementById("keys_v1").classList.add("keys_v3");
+
+        Array.from(document.querySelectorAll('.btn')).map(function(button) {
+            button.classList.remove("button_color_v2");
+            button.classList.add("button_color_v3");
+        });
+
+        document.getElementById("delete").classList.remove("delete_color_v2");
+        document.getElementById("delete").classList.add("delete_color_v3");
+
+        document.getElementById("reset").classList.remove("reset_color_v2");
+        document.getElementById("reset").classList.add("reset_color_v3");
+
+        document.getElementById("equal").classList.remove("equal_color_v2");
+        document.getElementById("equal").classList.add("equal_color_v3");
         
     }
     
@@ -52,35 +79,36 @@ document.querySelector(".background_changer").addEventListener("change", functio
         document.getElementById("slider").classList.remove("move_1");
         clickCounter = 0;
 
-        document.getElementById("container").classList.remove("container_v2");
         document.getElementById("container").classList.remove("container_v3");
 
-        document.getElementById("h1_v1").classList.remove("h1_v2");
         document.getElementById("h1_v1").classList.remove("h1_v3");
 
-        document.getElementById("h4_v1").classList.remove("h4_v2");
         document.getElementById("h4_v1").classList.remove("h4_v3");
 
-        document.getElementById("theme-number").classList.remove("theme_number_v2");
         document.getElementById("theme-number").classList.remove("theme_number_v3");
 
-        document.getElementById("slider").classList.remove("slider_v2");
         document.getElementById("slider").classList.remove("slider_v3");
 
-        document.getElementById("app-output").classList.remove("app_output_v2");
         document.getElementById("app-output").classList.remove("app_output_v3");
 
-        document.getElementById("keys_v1").classList.remove("keys_v2");
         document.getElementById("keys_v1").classList.remove("keys_v3");
 
-        
+        Array.from(document.querySelectorAll('.btn')).map(function(button) {
+            button.classList.remove("button_color_v3");
+        });
+
+        document.getElementById("delete").classList.remove("delete_color_v3");
+
+        document.getElementById("reset").classList.remove("reset_color_v3");
+
+        document.getElementById("equal").classList.remove("equal_color_v3");
     }  
 });
 
 // Calculator Brain
 
 function updateScreen(screenInput) {
-    document.querySelector("#app-output").innerHTML = screenInput;
+    document.querySelector("#app-output").innerHTML = screenInput.toLocaleString("en-US");
 }
 
 function Calculator(userInput) {
